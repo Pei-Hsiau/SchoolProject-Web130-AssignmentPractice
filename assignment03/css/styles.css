@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+/**
+ * Sizes
+ * ======
+ * - sm: < 40em
+ * - md: 40em < 64em
+ * - lg: 64em and greater
+ */
+nav ul {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  margin: 0;
+  background-color: #2da9ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.line {
+  border-right: 1px solid #fff;
+  border-top: none;
+}
+.line2 {
+  border-left: 1px solid #fff;
+  border-top: none;
+}
+
+@media screen and (max-width: 39.99em) {
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  nav ul.submenu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  nav ul.submenu {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+nav li {
+  position: relative;
+  display: block;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  nav li {
+    position: static;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+nav li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+nav li a:active {
+  background-color: #0a75be;
+}
+
+@media screen and (min-width: 64em) {
+  nav li a {
+    text-align: left;
+  }
+}
+
+nav li .menu-icon {
+  display: block;
+  float: left;
+  width: 34px;
+  margin-right: -34px;
+  height: 22px;
+  background-image: url("https://holisticpronerd.com/web130/assignment03/img/Hamburger.png");
+}
+
+nav li .menu-icon.open {
+  width: 27px;
+  margin-right: -27px;
+  height: 27px;
+  background-image: url("https://holisticpronerd.com/web130/assignment03/img/X-Icon.png");
+}
+
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Inconsolata", monospace;
+  font-size: 25px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 39.99em) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+.tablet-only {
+  display: none;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .tablet-only {
+    display: block;
+  }
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 40em) and (max-width: 63.99em) {
+  #productsSubmenu {
+    border-top: 1px solid #fff;
+  }
+}
+
+@media (max-width: 39.99em) {
+  #productsSubmenu {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .line {
+    border-bottom: 1px solid #fff;
+  }
+  .line2 {
+  border-top: 1px solid #fff;
+  }
+  .mobile-only {
+    border-bottom: 1px solid #fff;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

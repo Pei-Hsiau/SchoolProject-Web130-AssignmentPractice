@@ -1,0 +1,49 @@
+@import 'colors';
+@import 'nav';
+
+body {
+  background-color: $color;
+  padding: 0;
+  margin: 0;
+ }
+ .mobile-only {
+  display: none;
+  @include size(sm) {
+  display: block
+  }
+  
+ }
+ .tablet-only {
+  display: none;
+  @include size(md) {
+  display: block
+  }
+ }
+ .desktop-only {
+  display: none;
+  @include size(large) {
+  display: block
+  }
+ }
+
+ @media (min-width: 40em) and (max-width: 63.99em) {
+  #productsSubmenu {
+    border-top: 1px solid #fff;
+  }
+}
+
+@media (max-width: 39.99em) {
+  #productsSubmenu {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .line {
+    border-bottom: 1px solid #fff;
+  }
+  .line2 {
+  border-top: 1px solid #fff;
+  }
+  .mobile-only {
+    border-bottom: 1px solid #fff;
+  }
+}
